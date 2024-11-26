@@ -178,7 +178,7 @@ def main(args):
     api_key = dic_api_keys[args.model_type] if args.api_key is None else args.api_key
 
     if args.model_type == 'vllm' and args.run_inference == 1:
-        args.llm, args.sampling_params, args.tokenizer = prepare_vllm(args.model, max_tokens=args.max_tokens, tensor_parallel_size = args.vllm_tensor_parallel_size,max_model_len = None)
+        args.llm, args.sampling_params, args.tokenizer = prepare_vllm(args.model, max_tokens=args.max_tokens, tensor_parallel_size = args.vllm_tensor_parallel_size,max_model_len = 8192)
     if args.model_type == 'hf' and args.run_inference == 1:
         args.llm, args.tokenizer = prepare_hf_model(args.model)
 
