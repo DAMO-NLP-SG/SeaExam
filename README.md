@@ -3,13 +3,14 @@
 <p align="center">
 <a href="https://huggingface.co/datasets/SeaLLMs/SeaExam" target="_blank" rel="noopener"> 🤗 Dataset</a>
 &nbsp;&nbsp;
-<a href="https://huggingface.co/spaces/SeaLLMs/SeaExam_leaderboard" target="_blank" rel="noopener"> 🤗 Leaderboard</a>
+<a href="https://huggingface.co/spaces/SeaLLMs/LLM_Leaderboard_for_SEA" target="_blank" rel="noopener"> 🤗 Leaderboard</a>
 </p>
 
 This repo contains code for SeaExam, a toolkit for evaluating large language models (LLM) for Southeast Asian (SEA) languages including Chinese, English, Indonesian, Thai, and Vietnamese.
 
 The evaluation dataset consists of [M3Exam](https://github.com/DAMO-NLP-SG/M3Exam) and translated [MMLU](https://github.com/hendrycks/test) datsets. For more information, refer to the huggingface [dataset page](https://huggingface.co/datasets/SeaLLMs/SeaExam).
 
+Please also check SeaBench dataset [here](https://github.com/DAMO-NLP-SG/SeaBench) for more evaluation tasks on SEA languages.
 
 ## Setup enironment
 ```
@@ -29,7 +30,7 @@ python scripts/main.py --model $model_name_or_path
 
 For example: 
 ```
-python scripts/main.py --model SeaLLMs/SeaLLM-7B-v2
+python scripts/main.py --model SeaLLMs/SeaLLMs-v3-7B-Chat
 ```
 Or 
 ```
