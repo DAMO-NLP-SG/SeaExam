@@ -45,16 +45,15 @@ Our goal is to ensure a fair and consistent comparison across different LLMs whi
 
 To ensure a fair comparison and reduce LLMs' dependence on specific prompt templates, we have designed several templates. If `dynamic_template` is set as True (which is the default setting), a template will be randomly selected for each question. Additionally, users have the option to change the seed value to generate a different set of questions for evaluation purposes.
 
-## Citation
-```bibtex
+# Leaderboard
+You can find our interactive leaderboard [🤗 Here](https://huggingface.co/spaces/SeaLLMs/SeaExam_leaderboard). The leaderboard showcases results from two complementary benchmarks: [SeaExam](https://github.com/DAMO-NLP-SG/SeaExam) and [SeaBench](https://github.com/DAMO-NLP-SG/SeaBench). Each benchmark evaluates different aspects of model capabilities through distinct question types, providing a comprehensive assessment of model performance.
+
+# Citation
+If you find SeaBench useful for your research, please consider citing our papers:
+```
 @inproceedings{liu-etal-2025-seaexam,
     title = "{S}ea{E}xam and {S}ea{B}ench: Benchmarking {LLM}s with Local Multilingual Questions in {S}outheast {A}sia",
-    author = "Liu, Chaoqun  and
-      Zhang, Wenxuan  and
-      Ying, Jiahao  and
-      Aljunied, Mahani  and
-      Luu, Anh Tuan  and
-      Bing, Lidong",
+    author = "Liu, Chaoqun  and Zhang, Wenxuan  and Ying, Jiahao  and Aljunied, Mahani  and Luu, Anh Tuan  and  Bing, Lidong",
     editor = "Chiruzzo, Luis  and
       Ritter, Alan  and
       Wang, Lu",
@@ -66,5 +65,25 @@ To ensure a fair comparison and reduce LLMs' dependence on specific prompt templ
     url = "https://aclanthology.org/2025.findings-naacl.341/",
     pages = "6119--6136",
     ISBN = "979-8-89176-195-7"
+}
+
+@article{damonlp2024seallm3,
+  author = {Wenxuan Zhang*, Hou Pong Chan*, Yiran Zhao*, Mahani Aljunied*,
+            Jianyu Wang*, Chaoqun Liu, Yue Deng, Zhiqiang Hu, Weiwen Xu,
+            Yew Ken Chia, Xin Li, Lidong Bing},
+  title = {SeaLLMs 3: Open Foundation and Chat Multilingual Large Language Models for Southeast Asian Languages},
+  year = {2024},
+  url = {https://arxiv.org/abs/2407.19672}
+}
+
+@article{damonlpsg2023seallm,
+  author = {Xuan-Phi Nguyen*, Wenxuan Zhang*, Xin Li*, Mahani Aljunied*,
+            Zhiqiang Hu, Chenhui Shen, Yew Ken Chia, Xingxuan Li, Jianyu Wang,
+            Qingyu Tan, Liying Cheng, Guanzheng Chen, Yue Deng, Sen Yang,
+            Chaoqun Liu, Hang Zhang, Lidong Bing},
+  title = {SeaLLMs - Large Language Models for Southeast Asia},
+  year = {2024},
+  booktitle = {ACL 2024 System Demonstrations},
+  url = {https://arxiv.org/pdf/2312.00738},
 }
 ```
