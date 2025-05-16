@@ -54,9 +54,6 @@ If you find SeaBench useful for your research, please consider citing our papers
 @inproceedings{liu-etal-2025-seaexam,
     title = "{S}ea{E}xam and {S}ea{B}ench: Benchmarking {LLM}s with Local Multilingual Questions in {S}outheast {A}sia",
     author = "Liu, Chaoqun  and Zhang, Wenxuan  and Ying, Jiahao  and Aljunied, Mahani  and Luu, Anh Tuan  and  Bing, Lidong",
-    editor = "Chiruzzo, Luis  and
-      Ritter, Alan  and
-      Wang, Lu",
     booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
     month = apr,
     year = "2025",
